@@ -1,0 +1,26 @@
+index.js -> É responsável por chamar todas as cmadas
+
+workers 
+ ->Toda lógica PESADA (que envolva CPU)
+ ->Toda lógica que envolva tempo
+ ->Ele chama as regras de negócio da service
+
+Services 
+-> É responsável por fazer a conexão com o banco de dados
+-> Toda a lógica de negócio deve ser feita aqui
+-> Todas as regras de negócio devem ser feitas aqui
+
+View
+-> É responsável por mostrar as informações para o usuário
+-> Toda a interção com o DOM(com HTML, com a página)
+
+Controller
+->Responsável por chamar as funções do (services e/ou workers) e view
+
+Factoreis
+-> Responsável por criar os objetos finais para fazer as chamadas
+-> importa as dependencias
+-> retorna a função que vai ser chamada
+
+
+
